@@ -18,14 +18,15 @@ function seconds(){
     display1.innerHTML = show1.value;
     display2.innerHTML = show2.value;
     abc=setInterval(function(){
-        display2.innerHTML--;
-     if (display2.innerHTML==0 && display1.innerHTML>0){
+      if (display2.innerHTML==0 && display1.innerHTML>0){
         display1.innerHTML--
         display2.innerHTML=60;
-     } else if(display2.innerHTML==0 && display1.innerHTML==0){
+        
+      } else if(display2.innerHTML==0 && display1.innerHTML==0){
         clearInterval(abc)
-
-     }
+        
+      }
+      udisplay2.innerHTML--;
      
      
         
